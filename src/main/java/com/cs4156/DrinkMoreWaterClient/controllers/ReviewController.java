@@ -43,7 +43,7 @@ public class ReviewController {
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_JSON);
         HttpEntity<Object> entity = new HttpEntity<>(headers);
-        ResponseEntity<R> exchange = restTemplate.exchange(url + "/user" + id, HttpMethod.GET, entity, R.class);
+        ResponseEntity<R> exchange = restTemplate.exchange(url + "/user/" + id, HttpMethod.GET, entity, R.class);
         return exchange.getBody();
     }
 
@@ -53,7 +53,7 @@ public class ReviewController {
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_JSON);
         HttpEntity<Object> entity = new HttpEntity<>(headers);
-        ResponseEntity<R> exchange = restTemplate.exchange(url + "/rest" + id, HttpMethod.GET, entity, R.class);
+        ResponseEntity<R> exchange = restTemplate.exchange(url + "/rest/" + id, HttpMethod.GET, entity, R.class);
         return exchange.getBody();
     }
 

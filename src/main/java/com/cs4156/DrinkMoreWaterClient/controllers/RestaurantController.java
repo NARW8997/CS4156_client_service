@@ -35,7 +35,7 @@ public class RestaurantController {
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_JSON);
         HttpEntity<Object> entity = new HttpEntity<>(headers);
-        ResponseEntity<R> exchange = restTemplate.exchange(url + id, HttpMethod.GET, entity, R.class);
+        ResponseEntity<R> exchange = restTemplate.exchange(url + "/" + id, HttpMethod.GET, entity, R.class);
         return exchange.getBody();
     }
 
@@ -56,7 +56,7 @@ public class RestaurantController {
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_JSON);
         HttpEntity<Object> entity = new HttpEntity<>(headers);
-        ResponseEntity<R> exchange = restTemplate.exchange(url + id + "/details", HttpMethod.GET, entity, R.class);
+        ResponseEntity<R> exchange = restTemplate.exchange(url + "/" + id + "/details", HttpMethod.GET, entity, R.class);
         return exchange.getBody();
     }
 
@@ -66,7 +66,7 @@ public class RestaurantController {
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_JSON);
         HttpEntity<Object> entity = new HttpEntity<>(headers);
-        ResponseEntity<R> exchange = restTemplate.exchange(url + id + "/like", HttpMethod.GET, entity, R.class);
+        ResponseEntity<R> exchange = restTemplate.exchange(url + "/" + id + "/like", HttpMethod.GET, entity, R.class);
         return exchange.getBody();
     }
 
@@ -77,7 +77,7 @@ public class RestaurantController {
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_JSON);
         HttpEntity<Object> entity = new HttpEntity<>(headers);
-        ResponseEntity<R> exchange = restTemplate.exchange(url + id + "/dislike", HttpMethod.GET, entity, R.class);
+        ResponseEntity<R> exchange = restTemplate.exchange(url + "/" + id + "/dislike", HttpMethod.GET, entity, R.class);
         return exchange.getBody();
     }
 
