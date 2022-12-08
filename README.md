@@ -109,22 +109,22 @@
           * Request Parameters:  
                * `dish id`
 * ___bookmark___       
-    * `PSOT /bookmark`  
+     * `PSOT /bookmark`  
           * Description: This endpoint deletes a bookmark by provided bookmark object.  
           * Sample Request: localhost:80/bookmark
           * Request Parameters:  
                * `Bookmark Object`
-    * `PSOT bookmark/countuser/{userId}`  
+     * `PSOT bookmark/countuser/{userId}`  
           * Description: This endpoint retrives the number of bookmarks the user wrote.  
           * Sample Request: localhost:80/bookmark/countuser/4
           * Request Parameters:  
                * `user id`
-    * `GET bookmark/user/{userId}`  
+     * `GET bookmark/user/{userId}`  
           * Description: This endpoint deletes a bookmark by provided bookmark object.  
           * Sample Request: localhost:80/review/user/4
           * Request Parameters:  
                * `user id`        
-    * `DELETE bookmark/{id}`  
+     * `DELETE bookmark/{id}`  
           * Description: This endpoint deletes a bookmark by provided bookmark id.  
           * Sample Request: localhost:80/bookmark/45
           * Request Parameters:  
