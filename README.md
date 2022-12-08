@@ -2,6 +2,8 @@
  ### The service is the client service of Customer for DrinkMoreWater service
  ### The service has mainly 5 modules
  ### The service implemented using resttemplate to call DrinkMoreWater API particularly for Customer
+ ### The service token for now is "4", the user id "4" in the DrinkMoreWater database which role is a Customer, teh service also has sub-user system to store user from Client Service, every user from Client Service can use API with token "4"
+ 
 * ___Users___
      * `GET /user`  
           * Description: This endpoint retrieves all users that match the template given in the query parameters. No parameters are required.  
