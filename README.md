@@ -1,6 +1,6 @@
 ﻿# CS4156_client_service
  ### The service is the client service of Customer for DrinkMoreWater service
- ### The service has mainly 4 modules
+ ### The service has mainly 5 modules
 * ___Users___
      * `GET /user`  
           * Description: This endpoint retrieves all users that match the template given in the query parameters. No parameters are required.  
